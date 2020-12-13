@@ -32,8 +32,7 @@ public class StudentList {
         For implementing collections.sort() method we need to implement Comparable interface in our class
        and override compareTo method as per our use case*/
 
-        Collections.sort(l);// To use Comparable interface ,in our class we need to implement
-                            // Comparable interface and override compare method as per our use case
+        Collections.sort(l);// To use Comparable interface in our class we need to implement,Comparable interface and override compare method as per our use case
 
         //Printing elements after sorting the list on the basis of name.
         System.out.println(l);
@@ -51,9 +50,7 @@ public class StudentList {
         For implementing listname.sort() method we need to implement Comparator interface in our class
        and override compare method as per our use case*/
 
-        l.sort(new StudentClass());/*or if we want to sort using listName.sort() method we need to pass the refernce
-                                    of StudentClass() like we did for l.sort() method.*/
-
+        l.sort(new StudentClass());
 
 
 
@@ -80,7 +77,8 @@ public class StudentList {
         Comparator<StudentClass> comp=(o1, o2) -> {
             return o1.getRollNo()- o2.getRollNo();
         };
-        l.sort(comp);
+        l.sort(comp);   //passing the reference of lambda expression
+        //Printing elements after sorting the list on the basis of Roll number.
         System.out.println(l);
 
     }
