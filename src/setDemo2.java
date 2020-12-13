@@ -16,7 +16,7 @@ public class setDemo2 {
         }
         System.out.println(set1);
         System.out.println(set2);
-        
+
         //union
     Set<Integer> union=new HashSet<>();
         union.addAll(set2);
