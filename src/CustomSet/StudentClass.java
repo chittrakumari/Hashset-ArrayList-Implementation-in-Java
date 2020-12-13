@@ -1,8 +1,13 @@
+/**
+ * Creating a Set to store student objects.
+ */
+
+
 package CustomSet;
 
 import java.util.Objects;
 
-public class Student {
+public class StudentClass {
     private int rollNo;
     private String name;
 
@@ -31,7 +36,7 @@ public class Student {
         System.out.println("calling equals");
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Student that = (Student) o;
+        StudentClass that = (StudentClass) o;
         return rollNo == that.rollNo &&
                 Objects.equals(name, that.name);
     }
